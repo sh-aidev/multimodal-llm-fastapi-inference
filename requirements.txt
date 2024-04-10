@@ -1,0 +1,30 @@
+# # # --------- model zoo -------#
+transformers==4.39.3
+datasets==2.18.0
+
+# # ------- model training or inference ------#
+peft==0.10.0
+bitsandbytes==0.43.0
+accelerate==0.29.1
+trl==0.8.1
+tensorboard==2.16.2
+tensorboardX==2.6.2.2
+https://github.com/Dao-AILab/flash-attention/releases/download/v2.5.7/flash_attn-2.5.7+cu122torch2.1cxx11abiFALSE-cp310-cp310-linux_x86_64.whl
+
+# # --------- deployment servers ------ #
+openai==1.16.2
+fastapi[all]==0.110.0
+
+# # --------- others --------- #
+pyrootutils==1.0.4      # standardizing the project root setup
+pre-commit==3.3.3       # hooks for applying linters on commit
+rich==13.4.2            # beautiful text formatting in terminal
+pytest==7.3.2           # testing
+black==23.3.0           # code formatting
+twine==4.0.2            # for uploading to pypi
+sh==2.0.4               # for running bash commands in some tests (linux/macos only)
+loguru==0.7.2           # for logging
+rich==13.7.1            # for colorful terminal output
+pyfiglet==1.0.2
+python-dotenv==1.0.1
+toml==0.10.2
