@@ -1,6 +1,6 @@
 from openai import OpenAI
 
-openai_api_key = "EMPTY"
+openai_api_key = "NONE"
 openai_api_base = "http://127.0.0.1:8000/v1"
 
 client = OpenAI(
@@ -27,6 +27,9 @@ response = client.chat.completions.create(
   max_tokens=300,
   stream=True
 )
-
+# print(response)
 for out in response:
-    print(out)
+    if out.choices[0].delta.content is not None:
+      print(out.choices[0].delta.content.replace("</s>", ""), end='')
+
+print("\n")

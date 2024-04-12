@@ -14,7 +14,7 @@ print("Inferencing with HuggingFace's LLAVA multimodal LLM Model:")
 print("\n")
 
 import pyfiglet
-LLM_art = pyfiglet.figlet_format("LLAVA",  font="slant", justify="center", width=100)
+LLM_art = pyfiglet.figlet_format("LLAVA",  font="slant", justify="center")
 print(LLM_art)
 
 sys.stdout.write(ANSI_RESET)
